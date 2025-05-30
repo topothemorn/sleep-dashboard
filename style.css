@@ -728,7 +728,7 @@ body {
 .header {
   background: var(--sleep-bg-secondary);
   border-bottom: 1px solid var(--sleep-bg-tertiary);
-  padding: var(--space-32) 0;
+  padding: var(--space-20) 0;
   position: sticky;
   top: 0;
   z-index: 100;
