@@ -1,0 +1,347 @@
+{
+  "sleep_stages": {
+    "nrem_stage_1": {
+      "name": "NREM Stage 1 (N1)",
+      "duration": "1-7 minutes",
+      "percentage_of_sleep": "3-5%",
+      "description": "Light sleep transition from wakefulness to sleep",
+      "brain_waves": {
+        "primary": "Theta waves (4-8 Hz)",
+        "characteristics": "Slow rolling eye movements, gradual loss of alpha waves, enhanced beta activity"
+      },
+      "physiological_changes": [
+        "Heart rate and breathing slow",
+        "Muscles begin to relax",
+        "Body temperature starts to drop",
+        "Easy to wake up"
+      ],
+      "functions": [
+        "Transition from consciousness to sleep",
+        "Initial body relaxation",
+        "Preparation for deeper sleep stages"
+      ]
+    },
+    "nrem_stage_2": {
+      "name": "NREM Stage 2 (N2)",
+      "duration": "10-25 minutes",
+      "percentage_of_sleep": "50-60%",
+      "description": "Light sleep with distinctive brain wave patterns",
+      "brain_waves": {
+        "primary": "Theta waves (4-8 Hz)",
+        "special_features": [
+          "Sleep spindles (11-16 Hz bursts)",
+          "K-complexes (sharp waves)"
+        ]
+      },
+      "physiological_changes": [
+        "Further slowing of heart rate and breathing",
+        "Body temperature drops significantly",
+        "No eye movements",
+        "Reduced muscle activity"
+      ],
+      "functions": [
+        "Memory processing and consolidation",
+        "Metabolism regulation",
+        "Body maintenance processes",
+        "Digestive system maintenance"
+      ]
+    },
+    "nrem_stage_3": {
+      "name": "NREM Stage 3 (N3) - Deep Sleep",
+      "duration": "20-40 minutes",
+      "percentage_of_sleep": "10-20%",
+      "description": "Deepest non-REM sleep stage, also called slow-wave sleep",
+      "brain_waves": {
+        "primary": "Delta waves (0.5-4 Hz)",
+        "characteristics": "High amplitude, slow frequency waves dominate"
+      },
+      "physiological_changes": [
+        "Slowest heart rate and breathing",
+        "Lowest blood pressure",
+        "Difficult to wake up",
+        "Sleep inertia if awakened"
+      ],
+      "functions": [
+        "Tissue repair and growth",
+        "Immune system strengthening",
+        "Growth hormone release",
+        "Memory consolidation",
+        "Brain detoxification",
+        "Cell regeneration"
+      ]
+    },
+    "rem_stage": {
+      "name": "REM Sleep (Stage R)",
+      "duration": "10-60 minutes (increases throughout night)",
+      "percentage_of_sleep": "20-25%",
+      "description": "Rapid Eye Movement sleep with high brain activity",
+      "brain_waves": {
+        "primary": "Beta waves (15-30 Hz)",
+        "characteristics": "Similar to waking brain activity - paradoxical sleep"
+      },
+      "physiological_changes": [
+        "Rapid eye movements",
+        "Temporary muscle paralysis (atonia)",
+        "Increased blood pressure and heart rate",
+        "Variable breathing",
+        "Vivid dreams"
+      ],
+      "functions": [
+        "Memory consolidation and processing",
+        "Emotional regulation",
+        "Creative thinking and problem-solving",
+        "Brain development",
+        "Learning enhancement"
+      ]
+    }
+  },
+  "brain_wave_types": {
+    "gamma": {
+      "frequency": "25-100 Hz",
+      "amplitude": "Low",
+      "states": [
+        "High cognitive processing",
+        "Consciousness",
+        "Learning"
+      ],
+      "sleep_relevance": "Minimal during normal sleep"
+    },
+    "beta": {
+      "frequency": "12-30 Hz",
+      "amplitude": "30-50 \u03bcV",
+      "states": [
+        "Alert wakefulness",
+        "Active thinking",
+        "REM sleep"
+      ],
+      "sleep_relevance": "Present during REM sleep and brief awakenings"
+    },
+    "alpha": {
+      "frequency": "8-12 Hz",
+      "amplitude": "30-50 \u03bcV",
+      "states": [
+        "Relaxed wakefulness",
+        "Eyes closed",
+        "Drowsiness"
+      ],
+      "sleep_relevance": "Disappears as sleep begins, may briefly return during light awakenings"
+    },
+    "theta": {
+      "frequency": "4-8 Hz",
+      "amplitude": "50-100 \u03bcV",
+      "states": [
+        "Light sleep",
+        "Deep relaxation",
+        "Meditation"
+      ],
+      "sleep_relevance": "Dominant in NREM stages 1 and 2"
+    },
+    "delta": {
+      "frequency": "0.5-4 Hz",
+      "amplitude": "100-200 \u03bcV",
+      "states": [
+        "Deep sleep",
+        "Unconsciousness",
+        "Coma"
+      ],
+      "sleep_relevance": "Dominant in NREM stage 3 (deep sleep)"
+    }
+  },
+  "sleep_cycle_progression": {
+    "typical_night": {
+      "total_cycles": "4-6 cycles",
+      "cycle_duration": "90-120 minutes",
+      "pattern": "NREM 1 \u2192 NREM 2 \u2192 NREM 3 \u2192 NREM 2 \u2192 REM \u2192 repeat"
+    },
+    "early_night": {
+      "deep_sleep_dominance": "More NREM stage 3",
+      "rem_duration": "Shorter REM periods"
+    },
+    "late_night": {
+      "deep_sleep_reduction": "Less NREM stage 3",
+      "rem_increase": "Longer, more intense REM periods"
+    }
+  },
+  "healthy_vs_poor_sleep": {
+    "healthy_sleep_indicators": {
+      "brain_waves": [
+        "Clear, well-defined sleep spindles in stage 2",
+        "High-amplitude delta waves in stage 3",
+        "Organized alpha waves when relaxed",
+        "Proper theta wave patterns in light sleep"
+      ],
+      "sleep_architecture": [
+        "Appropriate time in each stage",
+        "Smooth transitions between stages",
+        "Adequate deep sleep (15-20% of total)",
+        "Normal REM sleep (20-25% of total)"
+      ],
+      "physiological_markers": [
+        "Consistent sleep onset (within 30 minutes)",
+        "Few nighttime awakenings",
+        "Sleep efficiency >85%",
+        "Appropriate blood pressure dip during sleep"
+      ]
+    },
+    "poor_sleep_indicators": {
+      "brain_waves": [
+        "Fragmented or absent sleep spindles",
+        "Reduced delta wave amplitude",
+        "Intrusion of beta waves during NREM",
+        "Irregular theta patterns"
+      ],
+      "sleep_architecture": [
+        "Reduced deep sleep percentage",
+        "Fragmented REM sleep",
+        "Frequent stage transitions",
+        "Excessive light sleep"
+      ],
+      "physiological_markers": [
+        "Sleep onset >30 minutes",
+        "Frequent awakenings (>5 per hour)",
+        "Sleep efficiency <85%",
+        "Lack of nocturnal blood pressure dip"
+      ]
+    }
+  },
+  "consequences_of_poor_sleep": {
+    "immediate_effects": {
+      "cognitive": [
+        "Reduced attention and focus",
+        "Impaired decision-making",
+        "Memory problems",
+        "Slower reaction times",
+        "Microsleep episodes"
+      ],
+      "emotional": [
+        "Increased irritability",
+        "Mood swings",
+        "Anxiety symptoms",
+        "Reduced emotional regulation"
+      ],
+      "physical": [
+        "Fatigue and drowsiness",
+        "Reduced coordination",
+        "Weakened immune response",
+        "Increased appetite"
+      ]
+    },
+    "long_term_consequences": {
+      "cardiovascular": {
+        "risks": [
+          "Hypertension (high blood pressure)",
+          "Coronary heart disease",
+          "Heart attacks",
+          "Stroke",
+          "Heart failure"
+        ],
+        "mechanisms": [
+          "Chronic inflammation",
+          "Sympathetic nervous system activation",
+          "Loss of nocturnal blood pressure dip",
+          "Accelerated atherosclerosis"
+        ]
+      },
+      "metabolic": {
+        "risks": [
+          "Type 2 diabetes",
+          "Obesity",
+          "Metabolic syndrome",
+          "Insulin resistance"
+        ],
+        "mechanisms": [
+          "Glucose regulation disruption",
+          "Hormonal imbalances",
+          "Increased cortisol levels",
+          "Appetite hormone disruption"
+        ]
+      },
+      "immune_system": {
+        "risks": [
+          "Increased infection susceptibility",
+          "Poor vaccine response",
+          "Delayed healing",
+          "Chronic inflammation"
+        ],
+        "mechanisms": [
+          "Reduced antibody production",
+          "Impaired cytokine regulation",
+          "Decreased NK cell activity",
+          "Disrupted immune memory formation"
+        ]
+      },
+      "neurological": {
+        "risks": [
+          "Cognitive decline",
+          "Memory impairment",
+          "Increased dementia risk",
+          "Depression and anxiety"
+        ],
+        "mechanisms": [
+          "Reduced brain detoxification",
+          "Impaired memory consolidation",
+          "Neuroinflammation",
+          "Neurotransmitter imbalances"
+        ]
+      }
+    }
+  },
+  "sleep_monitoring": {
+    "clinical_methods": {
+      "polysomnography": {
+        "description": "Gold standard for sleep assessment",
+        "measurements": [
+          "EEG",
+          "EOG",
+          "EMG",
+          "Respiratory effort",
+          "Oxygen saturation"
+        ],
+        "advantages": [
+          "Comprehensive data",
+          "High accuracy",
+          "Professional interpretation"
+        ],
+        "limitations": [
+          "Expensive",
+          "Laboratory setting",
+          "Single night data"
+        ]
+      },
+      "home_sleep_tests": {
+        "description": "Simplified monitoring for sleep apnea",
+        "measurements": [
+          "Airflow",
+          "Respiratory effort",
+          "Oxygen saturation"
+        ],
+        "advantages": [
+          "Home environment",
+          "Lower cost",
+          "Multiple nights"
+        ],
+        "limitations": [
+          "Limited parameters",
+          "No sleep staging",
+          "Potential data loss"
+        ]
+      }
+    },
+    "consumer_devices": {
+      "wearables": [
+        "Smartwatches",
+        "Fitness trackers",
+        "Smart rings"
+      ],
+      "nearables": [
+        "Bedside monitors",
+        "Under-mattress sensors"
+      ],
+      "airables": [
+        "Smartphone apps",
+        "Environmental sensors"
+      ],
+      "accuracy": "Moderate agreement with clinical standards (\u03ba=0.4-0.6 for best devices)"
+    }
+  }
+}

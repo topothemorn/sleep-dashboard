@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Stages & Brain Wave Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Sleep Stages & Brain Wave Analysis Dashboard</h1>
+                <p class="header__description">
+                    Understanding the critical importance of sleep architecture and brain wave patterns for optimal health and cognitive function
+                </p>
+                
+                <!-- Navigation Tabs -->
+                <nav class="nav-tabs">
+                    <button class="nav-tab active" data-section="overview">Sleep Stages Overview</button>
+                    <button class="nav-tab" data-section="brainwaves">Brain Wave Patterns</button>
+                    <button class="nav-tab" data-section="comparison">Healthy vs Poor Sleep</button>
+                    <button class="nav-tab" data-section="consequences">Consequences</button>
+                    <button class="nav-tab" data-section="monitoring">Sleep Monitoring</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sleep Stages Overview Section -->
+        <section id="overview" class="section active">
+            <div class="container">
+                <h2 class="section-title">Sleep Stages Overview</h2>
+                
+                <!-- Sleep Cycle Progress Bar -->
+                <div class="sleep-cycle">
+                    <h3>Typical Sleep Cycle Progression</h3>
+                    <div class="cycle-bar">
+                        <div class="cycle-stage" data-stage="n1" style="width: 5%;">N1</div>
+                        <div class="cycle-stage" data-stage="n2" style="width: 55%;">N2</div>
+                        <div class="cycle-stage" data-stage="n3" style="width: 20%;">N3</div>
+                        <div class="cycle-stage" data-stage="rem" style="width: 20%;">REM</div>
+                    </div>
+                </div>
+
+                <!-- Sleep Stage Cards -->
+                <div class="stage-grid">
+                    <div class="stage-card" data-stage="nrem1">
+                        <div class="stage-header">
+                            <h3>NREM Stage 1 (N1)</h3>
+                            <div class="stage-stats">
+                                <span class="duration">1-7 minutes</span>
+                                <span class="percentage">3-5%</span>
+                            </div>
+                        </div>
+                        <div class="stage-preview">
+                            <p>Light sleep transition from wakefulness</p>
+                            <div class="brain-wave-indicator theta">Theta waves (4-8 Hz)</div>
+                        </div>
+                        <div class="stage-details hidden">
+                            <h4>Physiological Changes:</h4>
+                            <ul>
+                                <li>Heart rate and breathing slow</li>
+                                <li>Muscles begin to relax</li>
+                                <li>Body temperature starts to drop</li>
+                                <li>Easy to wake up</li>
+                            </ul>
+                            <h4>Functions:</h4>
+                            <ul>
+                                <li>Transition from consciousness to sleep</li>
+                                <li>Initial body relaxation</li>
+                                <li>Preparation for deeper sleep stages</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-card" data-stage="nrem2">
+                        <div class="stage-header">
+                            <h3>NREM Stage 2 (N2)</h3>
+                            <div class="stage-stats">
+                                <span class="duration">10-25 minutes</span>
+                                <span class="percentage">50-60%</span>
+                            </div>
+                        </div>
+                        <div class="stage-preview">
+                            <p>Light sleep with distinctive brain patterns</p>
+                            <div class="brain-wave-indicator theta">Theta waves + Sleep Spindles</div>
+                        </div>
+                        <div class="stage-details hidden">
+                            <h4>Special Features:</h4>
+                            <ul>
+                                <li>Sleep spindles (11-16 Hz bursts)</li>
+                                <li>K-complexes (sharp waves)</li>
+                                <li>No eye movements</li>
+                                <li>Reduced muscle activity</li>
+                            </ul>
+                            <h4>Functions:</h4>
+                            <ul>
+                                <li>Memory processing and consolidation</li>
+                                <li>Metabolism regulation</li>
+                                <li>Body maintenance processes</li>
+                                <li>Digestive system maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-card" data-stage="nrem3">
+                        <div class="stage-header">
+                            <h3>NREM Stage 3 (N3)</h3>
+                            <div class="stage-stats">
+                                <span class="duration">20-40 minutes</span>
+                                <span class="percentage">10-20%</span>
+                            </div>
+                        </div>
+                        <div class="stage-preview">
+                            <p>Deep sleep - slow-wave sleep</p>
+                            <div class="brain-wave-indicator delta">Delta waves (0.5-4 Hz)</div>
+                        </div>
+                        <div class="stage-details hidden">
+                            <h4>Physiological Changes:</h4>
+                            <ul>
+                                <li>Slowest heart rate and breathing</li>
+                                <li>Lowest blood pressure</li>
+                                <li>Difficult to wake up</li>
+                                <li>Sleep inertia if awakened</li>
+                            </ul>
+                            <h4>Critical Functions:</h4>
+                            <ul>
+                                <li>Tissue repair and growth</li>
+                                <li>Immune system strengthening</li>
+                                <li>Growth hormone release</li>
+                                <li>Brain detoxification</li>
+                                <li>Cell regeneration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-card" data-stage="rem">
+                        <div class="stage-header">
+                            <h3>REM Sleep (Stage R)</h3>
+                            <div class="stage-stats">
+                                <span class="duration">10-60 minutes</span>
+                                <span class="percentage">20-25%</span>
+                            </div>
+                        </div>
+                        <div class="stage-preview">
+                            <p>Rapid Eye Movement - paradoxical sleep</p>
+                            <div class="brain-wave-indicator beta">Beta waves (15-30 Hz)</div>
+                        </div>
+                        <div class="stage-details hidden">
+                            <h4>Physiological Changes:</h4>
+                            <ul>
+                                <li>Rapid eye movements</li>
+                                <li>Temporary muscle paralysis (atonia)</li>
+                                <li>Increased blood pressure and heart rate</li>
+                                <li>Variable breathing</li>
+                                <li>Vivid dreams</li>
+                            </ul>
+                            <h4>Functions:</h4>
+                            <ul>
+                                <li>Memory consolidation and processing</li>
+                                <li>Emotional regulation</li>
+                                <li>Creative thinking and problem-solving</li>
+                                <li>Brain development</li>
+                                <li>Learning enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brain Wave Patterns Section -->
+        <section id="brainwaves" class="section">
+            <div class="container">
+                <h2 class="section-title">Brain Wave Patterns</h2>
+                
+                <div class="brainwave-reference">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1748540828/pplx_project_search_images/2ef36044acbde96e243399a924e354a59e7b7662.jpg" 
+                         alt="Brain wave frequencies and sleep stages" class="reference-image">
+                </div>
+
+                <div class="brainwave-grid">
+                    <div class="brainwave-card" data-wave="gamma">
+                        <div class="wave-header">
+                            <h3>Gamma Waves</h3>
+                            <div class="wave-frequency">25-100 Hz</div>
+                        </div>
+                        <div class="wave-visual gamma-wave"></div>
+                        <div class="wave-info">
+                            <p><strong>Amplitude:</strong> Low</p>
+                            <p><strong>States:</strong> High cognitive processing, consciousness, learning</p>
+                            <p><strong>Sleep relevance:</strong> Minimal during normal sleep</p>
+                        </div>
+                    </div>
+
+                    <div class="brainwave-card" data-wave="beta">
+                        <div class="wave-header">
+                            <h3>Beta Waves</h3>
+                            <div class="wave-frequency">12-30 Hz</div>
+                        </div>
+                        <div class="wave-visual beta-wave"></div>
+                        <div class="wave-info">
+                            <p><strong>Amplitude:</strong> 30-50 μV</p>
+                            <p><strong>States:</strong> Alert wakefulness, active thinking, REM sleep</p>
+                            <p><strong>Sleep relevance:</strong> Present during REM sleep and brief awakenings</p>
+                        </div>
+                    </div>
+
+                    <div class="brainwave-card" data-wave="alpha">
+                        <div class="wave-header">
+                            <h3>Alpha Waves</h3>
+                            <div class="wave-frequency">8-12 Hz</div>
+                        </div>
+                        <div class="wave-visual alpha-wave"></div>
+                        <div class="wave-info">
+                            <p><strong>Amplitude:</strong> 30-50 μV</p>
+                            <p><strong>States:</strong> Relaxed wakefulness, eyes closed, drowsiness</p>
+                            <p><strong>Sleep relevance:</strong> Disappears as sleep begins</p>
+                        </div>
+                    </div>
+
+                    <div class="brainwave-card" data-wave="theta">
+                        <div class="wave-header">
+                            <h3>Theta Waves</h3>
+                            <div class="wave-frequency">4-8 Hz</div>
+                        </div>
+                        <div class="wave-visual theta-wave"></div>
+                        <div class="wave-info">
+                            <p><strong>Amplitude:</strong> 50-100 μV</p>
+                            <p><strong>States:</strong> Light sleep, deep relaxation, meditation</p>
+                            <p><strong>Sleep relevance:</strong> Dominant in NREM stages 1 and 2</p>
+                        </div>
+                    </div>
+
+                    <div class="brainwave-card" data-wave="delta">
+                        <div class="wave-header">
+                            <h3>Delta Waves</h3>
+                            <div class="wave-frequency">0.5-4 Hz</div>
+                        </div>
+                        <div class="wave-visual delta-wave"></div>
+                        <div class="wave-info">
+                            <p><strong>Amplitude:</strong> 100-200 μV</p>
+                            <p><strong>States:</strong> Deep sleep, unconsciousness</p>
+                            <p><strong>Sleep relevance:</strong> Dominant in NREM stage 3 (deep sleep)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sleep-stage-waves">
+                    <h3>Brain Waves During Sleep Stages</h3>
+                    <div class="stage-wave-chart">
+                        <div class="stage-wave-item">
+                            <span class="stage-name">Awake</span>
+                            <div class="wave-bar beta-bar">Beta + Alpha</div>
+                        </div>
+                        <div class="stage-wave-item">
+                            <span class="stage-name">NREM 1</span>
+                            <div class="wave-bar theta-bar">Theta</div>
+                        </div>
+                        <div class="stage-wave-item">
+                            <span class="stage-name">NREM 2</span>
+                            <div class="wave-bar theta-bar">Theta + Spindles</div>
+                        </div>
+                        <div class="stage-wave-item">
+                            <span class="stage-name">NREM 3</span>
+                            <div class="wave-bar delta-bar">Delta</div>
+                        </div>
+                        <div class="stage-wave-item">
+                            <span class="stage-name">REM</span>
+                            <div class="wave-bar beta-bar">Beta (similar to awake)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthy vs Poor Sleep Comparison -->
+        <section id="comparison" class="section">
+            <div class="container">
+                <h2 class="section-title">Healthy vs Poor Sleep Comparison</h2>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card healthy">
+                        <h3>Healthy Sleep Indicators</h3>
+                        
+                        <div class="indicator-group">
+                            <h4>Brain Wave Patterns</h4>
+                            <div class="indicator-list">
+                                <div class="indicator good">Clear, well-defined sleep spindles in stage 2</div>
+                                <div class="indicator good">High-amplitude delta waves in stage 3</div>
+                                <div class="indicator good">Organized alpha waves when relaxed</div>
+                                <div class="indicator good">Proper theta wave patterns in light sleep</div>
+                            </div>
+                        </div>
+
+                        <div class="indicator-group">
+                            <h4>Sleep Architecture</h4>
+                            <div class="indicator-list">
+                                <div class="indicator good">Appropriate time in each stage</div>
+                                <div class="indicator good">Smooth transitions between stages</div>
+                                <div class="indicator good">Adequate deep sleep (15-20% of total)</div>
+                                <div class="indicator good">Normal REM sleep (20-25% of total)</div>
+                            </div>
+                        </div>
+
+                        <div class="indicator-group">
+                            <h4>Physiological Markers</h4>
+                            <div class="indicator-list">
+                                <div class="indicator good">Sleep onset within 30 minutes</div>
+                                <div class="indicator good">Few nighttime awakenings</div>
+                                <div class="indicator good">Sleep efficiency >85%</div>
+                                <div class="indicator good">Appropriate blood pressure dip</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card poor">
+                        <h3>Poor Sleep Indicators</h3>
+                        
+                        <div class="indicator-group">
+                            <h4>Brain Wave Patterns</h4>
+                            <div class="indicator-list">
+                                <div class="indicator bad">Fragmented or absent sleep spindles</div>
+                                <div class="indicator bad">Reduced delta wave amplitude</div>
+                                <div class="indicator bad">Intrusion of beta waves during NREM</div>
+                                <div class="indicator bad">Irregular theta patterns</div>
+                            </div>
+                        </div>
+
+                        <div class="indicator-group">
+                            <h4>Sleep Architecture</h4>
+                            <div class="indicator-list">
+                                <div class="indicator bad">Reduced deep sleep percentage</div>
+                                <div class="indicator bad">Fragmented REM sleep</div>
+                                <div class="indicator bad">Frequent stage transitions</div>
+                                <div class="indicator bad">Excessive light sleep</div>
+                            </div>
+                        </div>
+
+                        <div class="indicator-group">
+                            <h4>Physiological Markers</h4>
+                            <div class="indicator-list">
+                                <div class="indicator bad">Sleep onset >30 minutes</div>
+                                <div class="indicator bad">Frequent awakenings (>5 per hour)</div>
+                                <div class="indicator bad">Sleep efficiency <85%</div>
+                                <div class="indicator bad">Lack of nocturnal blood pressure dip</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consequences of Poor Sleep -->
+        <section id="consequences" class="section">
+            <div class="container">
+                <h2 class="section-title">Consequences of Poor Sleep</h2>
+                
+                <div class="consequences-timeline">
+                    <div class="timeline-item immediate">
+                        <h3>Immediate Effects (Hours to Days)</h3>
+                        <div class="effect-categories">
+                            <div class="effect-category">
+                                <h4>Cognitive Impact</h4>
+                                <ul>
+                                    <li>Reduced attention and focus</li>
+                                    <li>Impaired decision-making</li>
+                                    <li>Memory problems</li>
+                                    <li>Slower reaction times</li>
+                                    <li>Microsleep episodes</li>
+                                </ul>
+                            </div>
+                            <div class="effect-category">
+                                <h4>Emotional Impact</h4>
+                                <ul>
+                                    <li>Increased irritability</li>
+                                    <li>Mood swings</li>
+                                    <li>Anxiety symptoms</li>
+                                    <li>Reduced emotional regulation</li>
+                                </ul>
+                            </div>
+                            <div class="effect-category">
+                                <h4>Physical Impact</h4>
+                                <ul>
+                                    <li>Fatigue and drowsiness</li>
+                                    <li>Reduced coordination</li>
+                                    <li>Weakened immune response</li>
+                                    <li>Increased appetite</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="long-term-consequences">
+                    <h3>Long-term Consequences (Weeks to Years)</h3>
+                    
+                    <div class="consequence-cards">
+                        <div class="consequence-card" data-category="cardiovascular">
+                            <div class="consequence-header">
+                                <h4>Cardiovascular System</h4>
+                                <div class="severity-indicator high">High Risk</div>
+                            </div>
+                            <div class="consequence-preview">
+                                <p>Chronic sleep deprivation significantly increases cardiovascular disease risk</p>
+                            </div>
+                            <div class="consequence-details hidden">
+                                <div class="risks-mechanisms">
+                                    <div class="risks">
+                                        <h5>Health Risks:</h5>
+                                        <ul>
+                                            <li>Hypertension (high blood pressure)</li>
+                                            <li>Coronary heart disease</li>
+                                            <li>Heart attacks</li>
+                                            <li>Stroke</li>
+                                            <li>Heart failure</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mechanisms">
+                                        <h5>Mechanisms:</h5>
+                                        <ul>
+                                            <li>Chronic inflammation</li>
+                                            <li>Sympathetic nervous system activation</li>
+                                            <li>Loss of nocturnal blood pressure dip</li>
+                                            <li>Accelerated atherosclerosis</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="consequence-card" data-category="metabolic">
+                            <div class="consequence-header">
+                                <h4>Metabolic System</h4>
+                                <div class="severity-indicator high">High Risk</div>
+                            </div>
+                            <div class="consequence-preview">
+                                <p>Sleep loss disrupts glucose regulation and metabolic homeostasis</p>
+                            </div>
+                            <div class="consequence-details hidden">
+                                <div class="risks-mechanisms">
+                                    <div class="risks">
+                                        <h5>Health Risks:</h5>
+                                        <ul>
+                                            <li>Type 2 diabetes</li>
+                                            <li>Obesity</li>
+                                            <li>Metabolic syndrome</li>
+                                            <li>Insulin resistance</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mechanisms">
+                                        <h5>Mechanisms:</h5>
+                                        <ul>
+                                            <li>Glucose regulation disruption</li>
+                                            <li>Hormonal imbalances</li>
+                                            <li>Increased cortisol levels</li>
+                                            <li>Appetite hormone disruption</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="consequence-card" data-category="immune">
+                            <div class="consequence-header">
+                                <h4>Immune System</h4>
+                                <div class="severity-indicator medium">Medium Risk</div>
+                            </div>
+                            <div class="consequence-preview">
+                                <p>Sleep deprivation weakens immune function and inflammatory response</p>
+                            </div>
+                            <div class="consequence-details hidden">
+                                <div class="risks-mechanisms">
+                                    <div class="risks">
+                                        <h5>Health Risks:</h5>
+                                        <ul>
+                                            <li>Increased infection susceptibility</li>
+                                            <li>Poor vaccine response</li>
+                                            <li>Delayed healing</li>
+                                            <li>Chronic inflammation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mechanisms">
+                                        <h5>Mechanisms:</h5>
+                                        <ul>
+                                            <li>Reduced antibody production</li>
+                                            <li>Impaired cytokine regulation</li>
+                                            <li>Decreased NK cell activity</li>
+                                            <li>Disrupted immune memory formation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="consequence-card" data-category="neurological">
+                            <div class="consequence-header">
+                                <h4>Neurological System</h4>
+                                <div class="severity-indicator high">High Risk</div>
+                            </div>
+                            <div class="consequence-preview">
+                                <p>Poor sleep accelerates cognitive decline and mental health issues</p>
+                            </div>
+                            <div class="consequence-details hidden">
+                                <div class="risks-mechanisms">
+                                    <div class="risks">
+                                        <h5>Health Risks:</h5>
+                                        <ul>
+                                            <li>Cognitive decline</li>
+                                            <li>Memory impairment</li>
+                                            <li>Increased dementia risk</li>
+                                            <li>Depression and anxiety</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mechanisms">
+                                        <h5>Mechanisms:</h5>
+                                        <ul>
+                                            <li>Reduced brain detoxification</li>
+                                            <li>Impaired memory consolidation</li>
+                                            <li>Neuroinflammation</li>
+                                            <li>Neurotransmitter imbalances</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sleep Monitoring Section -->
+        <section id="monitoring" class="section">
+            <div class="container">
+                <h2 class="section-title">Sleep Monitoring Methods</h2>
+                
+                <div class="monitoring-overview">
+                    <div class="monitoring-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748580683/pplx_project_search_images/224e750a672fbf9831aa297296f17f2387e72100.jpg" 
+                             alt="Sleep study setup diagram" class="setup-image">
+                    </div>
+                </div>
+
+                <div class="monitoring-methods">
+                    <div class="method-category clinical">
+                        <h3>Clinical Methods</h3>
+                        
+                        <div class="method-card">
+                            <h4>Polysomnography (PSG)</h4>
+                            <div class="method-badge gold-standard">Gold Standard</div>
+                            <div class="method-details">
+                                <p><strong>Description:</strong> Comprehensive sleep assessment in laboratory setting</p>
+                                <div class="measurements">
+                                    <h5>Measurements:</h5>
+                                    <div class="measurement-tags">
+                                        <span class="tag">EEG (Brain waves)</span>
+                                        <span class="tag">EOG (Eye movements)</span>
+                                        <span class="tag">EMG (Muscle activity)</span>
+                                        <span class="tag">Respiratory effort</span>
+                                        <span class="tag">Oxygen saturation</span>
+                                    </div>
+                                </div>
+                                <div class="pros-cons">
+                                    <div class="pros">
+                                        <h5>Advantages:</h5>
+                                        <ul>
+                                            <li>Comprehensive data collection</li>
+                                            <li>High accuracy and reliability</li>
+                                            <li>Professional interpretation</li>
+                                            <li>Definitive sleep stage scoring</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>Limitations:</h5>
+                                        <ul>
+                                            <li>Expensive ($1,000-$3,000)</li>
+                                            <li>Laboratory setting (not natural)</li>
+                                            <li>Single night data only</li>
+                                            <li>Long waiting lists</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="method-card">
+                            <h4>Home Sleep Tests (HST)</h4>
+                            <div class="method-badge limited">Limited Scope</div>
+                            <div class="method-details">
+                                <p><strong>Description:</strong> Simplified monitoring focused on sleep apnea detection</p>
+                                <div class="measurements">
+                                    <h5>Measurements:</h5>
+                                    <div class="measurement-tags">
+                                        <span class="tag">Airflow</span>
+                                        <span class="tag">Respiratory effort</span>
+                                        <span class="tag">Oxygen saturation</span>
+                                        <span class="tag">Heart rate</span>
+                                    </div>
+                                </div>
+                                <div class="pros-cons">
+                                    <div class="pros">
+                                        <h5>Advantages:</h5>
+                                        <ul>
+                                            <li>Home environment (natural sleep)</li>
+                                            <li>Lower cost ($150-$500)</li>
+                                            <li>Multiple nights possible</li>
+                                            <li>Faster access</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>Limitations:</h5>
+                                        <ul>
+                                            <li>Limited parameters measured</li>
+                                            <li>No sleep staging capability</li>
+                                            <li>Potential data loss</li>
+                                            <li>Sleep apnea focus only</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-category consumer">
+                        <h3>Consumer Devices</h3>
+                        
+                        <div class="device-types">
+                            <div class="device-type">
+                                <h4>Wearables</h4>
+                                <div class="device-list">
+                                    <span class="device">Smartwatches</span>
+                                    <span class="device">Fitness trackers</span>
+                                    <span class="device">Smart rings</span>
+                                </div>
+                                <div class="accuracy-score moderate">
+                                    <span class="score">Accuracy: Moderate</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="device-type">
+                                <h4>Nearables</h4>
+                                <div class="device-list">
+                                    <span class="device">Bedside monitors</span>
+                                    <span class="device">Under-mattress sensors</span>
+                                </div>
+                                <div class="accuracy-score moderate">
+                                    <span class="score">Accuracy: Moderate</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 55%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="device-type">
+                                <h4>Airables</h4>
+                                <div class="device-list">
+                                    <span class="device">Smartphone apps</span>
+                                    <span class="device">Environmental sensors</span>
+                                </div>
+                                <div class="accuracy-score low">
+                                    <span class="score">Accuracy: Limited</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 35%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accuracy-note">
+                            <h4>Consumer Device Accuracy</h4>
+                            <p>Best consumer devices show moderate agreement with clinical standards (κ=0.4-0.6). 
+                               While useful for general sleep trends, they cannot replace clinical assessment for sleep disorders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
