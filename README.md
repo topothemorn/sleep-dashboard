@@ -14,3 +14,7 @@ A quick, interactive sleep-science reference for the sales floor. Open `index.ht
 ## Editing content
 
 All text and numbers live in `data.js`. Edit that file to change facts, talking points, myths or the glossary — `app.js` renders whatever is there.
+
+## Publishing changes
+
+The site is served by GitHub Pages from `main`. After editing `style.css`, `app.js` or `data.js`, bump the `?v=` number on its link in `index.html` (e.g. `?v=2` → `?v=3`) so phones don't keep using a cached old copy.
