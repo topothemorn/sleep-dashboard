@@ -237,7 +237,7 @@ window.SLEEP_DATA = {
     {
       id: "onset", label: "Takes 30+ minutes to fall asleep",
       priority: "Environment & routine",
-      why: "Sleep onset depends on sleep pressure, the body clock, and a calm, cool, dark environment. A mattress helps comfort, but it isn't the whole fix.",
+      why: "Sleep onset depends on sleep debt, the body clock, and a calm, cool, dark environment. A mattress helps comfort, but it isn't the whole fix.",
       look: ["Comfort and temperature first", "Blackout/quiet environment", "Consistent wake time, less screen time before bed"],
       say: "A comfortable, cool bed takes away a reason to stay awake — and a consistent schedule does a lot of the rest.",
       refer: false
@@ -287,7 +287,7 @@ window.SLEEP_DATA = {
     caffeineHalfLife: 5, // hours, typical adult average (varies ~2–10)
     caffeineMg: 95,      // one 8 oz cup of brewed coffee
     points: [
-      { title: "Sleep pressure", body: "A chemical called adenosine builds up the longer you're awake, making you sleepy. Sleep clears it. Caffeine works by blocking adenosine — it hides the tiredness, it doesn't remove it." },
+      { title: "Sleep debt", body: "The longer you're awake, the more sleep debt builds up (a chemical called adenosine), making you sleepy. Sleep pays it back. Short nights carry the debt into the next day. Caffeine blocks adenosine — it hides the tiredness, it doesn't pay off the debt." },
       { title: "Body clock", body: "Your circadian rhythm runs on a ~24-hour cycle set mostly by light. Evening darkness triggers melatonin; morning light resets the clock. Screens and bright light late at night push it later." },
       { title: "Temperature", body: "Core temperature drops as you fall asleep and bottoms out in the early morning. A cool room and breathable bed help the body shed heat — a hot bed fights this." }
     ]
@@ -332,7 +332,7 @@ window.SLEEP_DATA = {
     { term: "Sleep inertia", def: "Grogginess after waking, strongest when woken from deep sleep." },
     { term: "Circadian rhythm", def: "The body's ~24-hour internal clock, set mainly by light." },
     { term: "Chronotype", def: "Whether you're naturally a morning person, night owl, or in between." },
-    { term: "Adenosine", def: "Chemical that builds up while you're awake and creates 'sleep pressure'. Caffeine blocks it." },
+    { term: "Adenosine", def: "Chemical that builds up while you're awake and drives sleep debt and makes you sleepy. Caffeine blocks it." },
     { term: "Melatonin", def: "Hormone released in darkness that signals it's night. Bright light suppresses it." },
     { term: "Sleep debt", def: "The running total of sleep you've missed versus what you need." },
     { term: "AHI", def: "Apnea-Hypopnea Index — breathing interruptions per hour of sleep. 5+ indicates sleep apnea." },

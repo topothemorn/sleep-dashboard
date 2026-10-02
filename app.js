@@ -465,7 +465,7 @@
   // ---------- Drivers + caffeine ----------
   function renderDrivers() {
     const icons = {
-      'Sleep pressure': '<path d="M5 19h14M7 19V9M12 19V5M17 19v-7"/>',
+      'Sleep debt': '<path d="M5 19h14M7 19V9M12 19V5M17 19v-7"/>',
       'Body clock': '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
       'Temperature': '<path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 10v6"/>'
     };
